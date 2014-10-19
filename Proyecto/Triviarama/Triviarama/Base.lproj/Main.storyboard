@@ -13,15 +13,109 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xXN-Nj-L3U">
+                                <rect key="frame" x="-5" y="521" width="778" height="82"/>
+                                <state key="normal" backgroundImage="BotonStart.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="axL-Jd-BZg" kind="push" identifier="menu" id="lId-lR-xNA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXX-oe-4Fg">
+                                <rect key="frame" x="-5" y="640" width="778" height="82"/>
+                                <state key="normal" backgroundImage="BotonScores.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="njK-qU-gHn" kind="push" identifier="scores" id="iwR-HO-djA"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TriviaramaLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="R5Y-8r-0kC">
+                                <rect key="frame" x="22" y="80" width="730" height="283"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Re6-z5-N2c">
+                                <rect key="frame" x="218" y="708" width="332" height="337"/>
+                                <state key="normal" image="FarmLogo.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="EBO-PY-Ve0" kind="push" identifier="webSite" id="d2C-P7-zYv"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="oyt-t5-MIM"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1252" y="387"/>
+            <point key="canvasLocation" x="1242" y="333"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fbY-KD-TJb">
+            <objects>
+                <viewController id="njK-qU-gHn" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zvt-BP-H9m"/>
+                        <viewControllerLayoutGuide type="bottom" id="Svf-vY-4KI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="p4B-WJ-qXS">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="jYi-mc-ujN">
+                                <rect key="frame" x="0.0" y="336" width="768" height="378"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="SMf-nP-gJ6">
+                                        <rect key="frame" x="0.0" y="0.0" width="412" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SMf-nP-gJ6" id="Jz9-7Y-KvM">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="AEF-u7-1xL"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c2Z-db-r83" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1460" y="1494"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Jjt-Ch-A3s">
+            <objects>
+                <viewController id="EBO-PY-Ve0" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tog-rg-2wa"/>
+                        <viewControllerLayoutGuide type="bottom" id="NPJ-c4-bSq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tBk-g6-Xgl">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Cf-0e-LPv">
+                                <rect key="frame" x="33" y="241" width="703" height="775"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="MWR-8x-Tov"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wbC-Bq-A3M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="652" y="1445"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ZwY-iC-bBo">
@@ -32,15 +126,155 @@
                         <viewControllerLayoutGuide type="bottom" id="Qez-9g-ncN"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="AfD-75-ii8">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="6Ha-Ve-U5k">
+                                <rect key="frame" x="0.0" y="224" width="768" height="281"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="S2u-VO-zUx">
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="S2u-VO-zUx" id="dzc-Pb-dpm">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ctO-kI-7Qi">
+                                <rect key="frame" x="0.0" y="607" width="768" height="228"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="lat-nf-ieN">
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lat-nf-ieN" id="M1U-oK-Rqb">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tTj-OB-8cd">
+                                <rect key="frame" x="0.0" y="887" width="778" height="82"/>
+                                <state key="normal" backgroundImage="BotonStart.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="fyM-tD-0Q1" kind="push" identifier="game" id="V3Z-hA-0v1"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="kVX-si-tGi"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V4D-Lc-QYB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2033" y="387"/>
+            <point key="canvasLocation" x="2063" y="387"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eFx-cg-ajb">
+            <objects>
+                <viewController id="fyM-tD-0Q1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hm9-fm-nLN"/>
+                        <viewControllerLayoutGuide type="bottom" id="vF3-s9-aFN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="32o-eV-afg">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U2h-Ka-laM">
+                                <rect key="frame" x="31" y="821" width="120" height="167"/>
+                                <color key="backgroundColor" red="0.39437363850000001" green="0.67045243399999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wAX-0I-ZQ6">
+                                <rect key="frame" x="181" y="821" width="120" height="167"/>
+                                <color key="backgroundColor" red="0.39437363850000001" green="0.67045243399999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UtE-eY-fqd">
+                                <rect key="frame" x="489" y="821" width="120" height="167"/>
+                                <color key="backgroundColor" red="0.39437363850000001" green="0.67045243399999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SDY-dB-jzU">
+                                <rect key="frame" x="632" y="821" width="120" height="167"/>
+                                <color key="backgroundColor" red="0.39437363850000001" green="0.67045243399999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Ol-Xc-Txf">
+                                <rect key="frame" x="335" y="821" width="120" height="167"/>
+                                <color key="backgroundColor" red="0.39437363850000001" green="0.67045243399999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FMg-O1-5gq">
+                                <rect key="frame" x="31" y="616" width="120" height="167"/>
+                                <color key="backgroundColor" red="0.39437363850000001" green="0.67045243399999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jc3-4A-MWW">
+                                <rect key="frame" x="181" y="616" width="120" height="167"/>
+                                <color key="backgroundColor" red="0.39437363850000001" green="0.67045243399999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nfU-ew-ghK">
+                                <rect key="frame" x="335" y="616" width="120" height="167"/>
+                                <color key="backgroundColor" red="0.39437363850000001" green="0.67045243399999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mYJ-qT-40G">
+                                <rect key="frame" x="489" y="616" width="120" height="167"/>
+                                <color key="backgroundColor" red="0.39437363850000001" green="0.67045243399999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RZn-ix-W1T">
+                                <rect key="frame" x="632" y="616" width="120" height="167"/>
+                                <color key="backgroundColor" red="0.39437363850000001" green="0.67045243399999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Pg-P3-lv7">
+                                <rect key="frame" x="632" y="418" width="120" height="167"/>
+                                <color key="backgroundColor" red="0.39437363850000001" green="0.67045243399999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="54z-2d-aeY">
+                                <rect key="frame" x="489" y="418" width="120" height="167"/>
+                                <color key="backgroundColor" red="0.39437363850000001" green="0.67045243399999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gDA-Rh-W8q">
+                                <rect key="frame" x="335" y="418" width="120" height="167"/>
+                                <color key="backgroundColor" red="0.39437363850000001" green="0.67045243399999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WqD-xQ-LC1">
+                                <rect key="frame" x="181" y="418" width="120" height="167"/>
+                                <color key="backgroundColor" red="0.39437363850000001" green="0.67045243399999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Jc-xU-nFU">
+                                <rect key="frame" x="31" y="418" width="120" height="167"/>
+                                <color key="backgroundColor" red="0.39437363850000001" green="0.67045243399999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JLw-h8-fre">
+                                <rect key="frame" x="31" y="223" width="120" height="167"/>
+                                <color key="backgroundColor" red="0.39437363850000001" green="0.67045243399999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KzW-tP-2bq">
+                                <rect key="frame" x="181" y="223" width="120" height="167"/>
+                                <color key="backgroundColor" red="0.39437363850000001" green="0.67045243399999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rq8-Ze-nrY">
+                                <rect key="frame" x="335" y="223" width="120" height="167"/>
+                                <color key="backgroundColor" red="0.39437363850000001" green="0.67045243399999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RtB-2E-0X6">
+                                <rect key="frame" x="489" y="223" width="120" height="167"/>
+                                <color key="backgroundColor" red="0.39437363850000001" green="0.67045243399999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gTT-sg-orw">
+                                <rect key="frame" x="632" y="223" width="120" height="167"/>
+                                <color key="backgroundColor" red="0.39437363850000001" green="0.67045243399999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="SHE-1I-31S"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SLP-Ae-0nc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2992" y="373"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fpz-cr-22g">
@@ -61,4 +295,10 @@
             <point key="canvasLocation" x="95" y="788"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="BotonScores.png" width="768" height="85"/>
+        <image name="BotonStart.png" width="768" height="85"/>
+        <image name="FarmLogo.png" width="1000" height="1000"/>
+        <image name="TriviaramaLogo.png" width="1800" height="600"/>
+    </resources>
 </document>
