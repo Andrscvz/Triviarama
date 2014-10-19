@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62567D4819F3233900F33BB8 /* FarmLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 62567D4519F3233900F33BB8 /* FarmLogo.png */; };
+		62567D4919F3233900F33BB8 /* ipadBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 62567D4619F3233900F33BB8 /* ipadBackground.jpg */; };
+		62567D4A19F3233900F33BB8 /* TriviaramaLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 62567D4719F3233900F33BB8 /* TriviaramaLogo.png */; };
+		62567D4D19F327D200F33BB8 /* BotonScores.png in Resources */ = {isa = PBXBuildFile; fileRef = 62567D4B19F327D200F33BB8 /* BotonScores.png */; };
+		62567D4E19F327D200F33BB8 /* BotonStart.png in Resources */ = {isa = PBXBuildFile; fileRef = 62567D4C19F327D200F33BB8 /* BotonStart.png */; };
+		62567D5019F32A0900F33BB8 /* ipadBackgroundPantallaInicio.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 62567D4F19F32A0900F33BB8 /* ipadBackgroundPantallaInicio.jpg */; };
 		62896C4019F31E6C00224684 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 62896C3F19F31E6C00224684 /* main.m */; };
 		62896C4319F31E6C00224684 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 62896C4219F31E6C00224684 /* AppDelegate.m */; };
 		62896C4619F31E6C00224684 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62896C4519F31E6C00224684 /* ViewController.m */; };
@@ -27,6 +33,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		62567D4519F3233900F33BB8 /* FarmLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FarmLogo.png; sourceTree = "<group>"; };
+		62567D4619F3233900F33BB8 /* ipadBackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ipadBackground.jpg; sourceTree = "<group>"; };
+		62567D4719F3233900F33BB8 /* TriviaramaLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TriviaramaLogo.png; sourceTree = "<group>"; };
+		62567D4B19F327D200F33BB8 /* BotonScores.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BotonScores.png; sourceTree = "<group>"; };
+		62567D4C19F327D200F33BB8 /* BotonStart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BotonStart.png; sourceTree = "<group>"; };
+		62567D4F19F32A0900F33BB8 /* ipadBackgroundPantallaInicio.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ipadBackgroundPantallaInicio.jpg; sourceTree = "<group>"; };
 		62896C3A19F31E6C00224684 /* Triviarama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Triviarama.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62896C3E19F31E6C00224684 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62896C3F19F31E6C00224684 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -60,6 +72,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		62567D4419F322A800F33BB8 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				62567D4F19F32A0900F33BB8 /* ipadBackgroundPantallaInicio.jpg */,
+				62567D4B19F327D200F33BB8 /* BotonScores.png */,
+				62567D4C19F327D200F33BB8 /* BotonStart.png */,
+				62567D4519F3233900F33BB8 /* FarmLogo.png */,
+				62567D4619F3233900F33BB8 /* ipadBackground.jpg */,
+				62567D4719F3233900F33BB8 /* TriviaramaLogo.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 		62896C3119F31E6C00224684 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +106,7 @@
 		62896C3C19F31E6C00224684 /* Triviarama */ = {
 			isa = PBXGroup;
 			children = (
+				62567D4419F322A800F33BB8 /* images */,
 				62896C4119F31E6C00224684 /* AppDelegate.h */,
 				62896C4219F31E6C00224684 /* AppDelegate.m */,
 				62896C4419F31E6C00224684 /* ViewController.h */,
@@ -200,8 +226,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				62896C4919F31E6C00224684 /* Main.storyboard in Resources */,
+				62567D4E19F327D200F33BB8 /* BotonStart.png in Resources */,
 				62896C4E19F31E6C00224684 /* LaunchScreen.xib in Resources */,
+				62567D4D19F327D200F33BB8 /* BotonScores.png in Resources */,
+				62567D4819F3233900F33BB8 /* FarmLogo.png in Resources */,
 				62896C4B19F31E6C00224684 /* Images.xcassets in Resources */,
+				62567D4A19F3233900F33BB8 /* TriviaramaLogo.png in Resources */,
+				62567D5019F32A0900F33BB8 /* ipadBackgroundPantallaInicio.jpg in Resources */,
+				62567D4919F3233900F33BB8 /* ipadBackground.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +446,7 @@
 				62896C5F19F31E6C00224684 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		62896C6019F31E6C00224684 /* Build configuration list for PBXNativeTarget "TriviaramaTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +455,7 @@
 				62896C6219F31E6C00224684 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
