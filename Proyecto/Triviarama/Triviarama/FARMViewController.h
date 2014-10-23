@@ -1,10 +1,10 @@
 /*
- Archivo: AppDelegate.h
+ Archivo: FARMViewController.h
  Proyecto: Triviarama
  Autor(es): FARM
  Fecha de creación: 20/Octubre/2014
  Fecha de última actualización: 23/Octubre/2014
- Descripción general: Clase que administra la aplicacion en general
+ Descripción general: Controlador que maneja los elementos de la vista correspondiente al sitio de los desarrolladores de la aplicacion
  
  Triviarama - Memorama que consiste en emparejar cada pregunta de trivia con su respuesta correspondiente.
  Copyright (C) 2014 - ITESM
@@ -37,10 +37,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
+@interface FARMViewController : UIViewController < UIWebViewDelegate>
+@property (strong, nonatomic) IBOutlet UIWebView *FarmWebVIew;
 
 @end
-

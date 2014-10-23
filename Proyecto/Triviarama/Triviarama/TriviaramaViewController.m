@@ -1,10 +1,10 @@
 /*
- Archivo: AppDelegate.h
+ Archivo: TriviaramaViewController.m
  Proyecto: Triviarama
  Autor(es): FARM
  Fecha de creación: 20/Octubre/2014
  Fecha de última actualización: 23/Octubre/2014
- Descripción general: Clase que administra la aplicacion en general
+ Descripción general: Controlador que maneja los elementos de la vista con la que inicia la aplicacion
  
  Triviarama - Memorama que consiste en emparejar cada pregunta de trivia con su respuesta correspondiente.
  Copyright (C) 2014 - ITESM
@@ -34,13 +34,24 @@
  Fernando Javier Garza Brambila – A01034753
  Marialicia Villarreal García – A00811095
  */
+#import "TriviaramaViewController.h"
 
-#import <UIKit/UIKit.h>
-
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
+@interface TriviaramaViewController ()
 
 @end
 
+@implementation TriviaramaViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"ipadBackgroundPantallaInicio.jpg"]];
+    // Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+
+@end

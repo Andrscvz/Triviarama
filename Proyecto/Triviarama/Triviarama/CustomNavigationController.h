@@ -1,10 +1,10 @@
 /*
- Archivo: AppDelegate.h
+ Archivo: CustomNavigationController.h
  Proyecto: Triviarama
  Autor(es): FARM
  Fecha de creación: 20/Octubre/2014
  Fecha de última actualización: 23/Octubre/2014
- Descripción general: Clase que administra la aplicacion en general
+ Descripción general: Clase que se encarga de llevar un control de las vistas por las que el usuario ha pasado.
  
  Triviarama - Memorama que consiste en emparejar cada pregunta de trivia con su respuesta correspondiente.
  Copyright (C) 2014 - ITESM
@@ -37,10 +37,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
+@interface CustomNavigationController : UINavigationController
 
 @end
-

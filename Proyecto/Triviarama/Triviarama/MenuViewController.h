@@ -1,10 +1,10 @@
 /*
- Archivo: AppDelegate.h
+ Archivo: MenuViewController.h
  Proyecto: Triviarama
  Autor(es): FARM
  Fecha de creación: 20/Octubre/2014
  Fecha de última actualización: 23/Octubre/2014
- Descripción general: Clase que administra la aplicacion en general
+ Descripción general: Controlador que maneja los elementos de la vista correspondiente al menu de la aplicacion
  
  Triviarama - Memorama que consiste en emparejar cada pregunta de trivia con su respuesta correspondiente.
  Copyright (C) 2014 - ITESM
@@ -37,10 +37,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface MenuViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@property (strong, nonatomic) IBOutlet UITableView *levelsTableView;
+@property (strong, nonatomic) IBOutlet UITableView *CategoriesTableView;
 
-@property (strong, nonatomic) UIWindow *window;
-
+@property (strong, nonatomic) IBOutlet UILabel *labelNivel;
+@property (strong, nonatomic) IBOutlet UILabel *labelCategoria;
 
 @end
-

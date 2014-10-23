@@ -1,10 +1,10 @@
 /*
- Archivo: AppDelegate.h
+ Archivo: ScoresViewController.m
  Proyecto: Triviarama
  Autor(es): FARM
  Fecha de creación: 20/Octubre/2014
  Fecha de última actualización: 23/Octubre/2014
- Descripción general: Clase que administra la aplicacion en general
+ Descripción general: Controlador que maneja los elementos de la vista correspondiente a los scores de la aplicacion
  
  Triviarama - Memorama que consiste en emparejar cada pregunta de trivia con su respuesta correspondiente.
  Copyright (C) 2014 - ITESM
@@ -35,12 +35,38 @@
  Marialicia Villarreal García – A00811095
  */
 
-#import <UIKit/UIKit.h>
+#import "ScoresViewController.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
+@interface ScoresViewController ()
 
 @end
 
+@implementation ScoresViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"ipadBackground.jpg"]];
+    // Do any additional setup after loading the view.
+    self.scoresTableView.backgroundColor = [UIColor clearColor];
+    self.scoresTableView.opaque= NO;
+    self.scoresTableView.backgroundView= nil;
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
+
+@end
