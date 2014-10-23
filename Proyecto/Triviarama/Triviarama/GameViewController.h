@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  GameViewController.h
 //  Triviarama
 //
-//  Created by Rob on 18/10/14.
+//  Created by Rob on 22/10/14.
 //  Copyright (c) 2014 ITESM. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface GameViewController : UIViewController
 
 @end
-

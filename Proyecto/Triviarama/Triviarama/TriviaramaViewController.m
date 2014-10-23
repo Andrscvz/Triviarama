@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 ITESM. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "TriviaramaViewController.h"
 
-@interface ViewController ()
+@interface TriviaramaViewController ()
 
 @end
 
-@implementation ViewController
+@implementation TriviaramaViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -24,5 +24,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 @end
