@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
  Archivo: CustomNavigationController.h
  Proyecto: Triviarama
@@ -34,6 +35,15 @@
  Fernando Javier Garza Brambila – A01034753
  Marialicia Villarreal García – A00811095
  */
+=======
+//
+//  CustomNavigationController.h
+//  Triviarama
+//
+//  Created by Rob on 23/10/14.
+//  Copyright (c) 2014 ITESM. All rights reserved.
+//
+>>>>>>> FETCH_HEAD
 
 #import <UIKit/UIKit.h>
 

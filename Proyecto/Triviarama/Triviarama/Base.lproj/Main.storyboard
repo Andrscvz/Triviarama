@@ -74,7 +74,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="989" y="514"/>
+=======
+            <point key="canvasLocation" x="1233" y="278"/>
+>>>>>>> FETCH_HEAD
         </scene>
         <!--scores-->
         <scene sceneID="fbY-KD-TJb">
@@ -124,7 +128,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c2Z-db-r83" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="1496" y="1746"/>
+=======
+            <point key="canvasLocation" x="1460" y="1494"/>
+>>>>>>> FETCH_HEAD
         </scene>
         <!--farm-->
         <scene sceneID="Jjt-Ch-A3s">
@@ -275,7 +283,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V4D-Lc-QYB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="2031" y="514"/>
+=======
+            <point key="canvasLocation" x="2063" y="387"/>
+>>>>>>> FETCH_HEAD
         </scene>
         <!--game-->
         <scene sceneID="eFx-cg-ajb">
@@ -454,7 +466,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SLP-Ae-0nc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="2976" y="521"/>
+=======
+            <point key="canvasLocation" x="2992" y="373"/>
+>>>>>>> FETCH_HEAD
         </scene>
         <!--Custom Navigation Controller-->
         <scene sceneID="fpz-cr-22g">
