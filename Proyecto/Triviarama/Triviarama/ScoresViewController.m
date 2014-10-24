@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /*
  Archivo: ScoresViewController.m
  Proyecto: Triviarama
@@ -35,15 +34,6 @@
  Fernando Javier Garza Brambila – A01034753
  Marialicia Villarreal García – A00811095
  */
-=======
-//
-//  ScoresViewController.m
-//  Triviarama
-//
-//  Created by Rob on 22/10/14.
-//  Copyright (c) 2014 ITESM. All rights reserved.
-//
->>>>>>> FETCH_HEAD
 
 #import "ScoresViewController.h"
 
@@ -55,11 +45,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-<<<<<<< HEAD
     self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"ipadBackground.jpg"]];
-=======
-    self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"ipadBackgroundPantallaInicio.jpg"]];
->>>>>>> FETCH_HEAD
     // Do any additional setup after loading the view.
     self.scoresTableView.backgroundColor = [UIColor clearColor];
     self.scoresTableView.opaque= NO;

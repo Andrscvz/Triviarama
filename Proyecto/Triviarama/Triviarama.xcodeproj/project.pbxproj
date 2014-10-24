@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-<<<<<<< HEAD
 		623C05F619F9B5F500C33725 /* Animals.png in Resources */ = {isa = PBXBuildFile; fileRef = 623C05C919F9B5F500C33725 /* Animals.png */; };
 		623C05F719F9B5F500C33725 /* BooksAuthors.png in Resources */ = {isa = PBXBuildFile; fileRef = 623C05CA19F9B5F500C33725 /* BooksAuthors.png */; };
 		623C05F819F9B5F500C33725 /* BotonScores.png in Resources */ = {isa = PBXBuildFile; fileRef = 623C05CB19F9B5F500C33725 /* BotonScores.png */; };
@@ -53,66 +52,10 @@
 		623C062019F9B5F500C33725 /* TriviaramaLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 623C05F319F9B5F500C33725 /* TriviaramaLogo.png */; };
 		623C062119F9B5F500C33725 /* Winner.png in Resources */ = {isa = PBXBuildFile; fileRef = 623C05F419F9B5F500C33725 /* Winner.png */; };
 		623C062219F9B5F500C33725 /* WordOrigins.png in Resources */ = {isa = PBXBuildFile; fileRef = 623C05F519F9B5F500C33725 /* WordOrigins.png */; };
-=======
-		6250D33019F83D1600AE9524 /* Animals.png in Resources */ = {isa = PBXBuildFile; fileRef = 6250D30319F83D1600AE9524 /* Animals.png */; };
-		6250D33119F83D1600AE9524 /* BooksAuthors.png in Resources */ = {isa = PBXBuildFile; fileRef = 6250D30419F83D1600AE9524 /* BooksAuthors.png */; };
-		6250D33219F83D1600AE9524 /* BotonScores.png in Resources */ = {isa = PBXBuildFile; fileRef = 6250D30519F83D1600AE9524 /* BotonScores.png */; };
-		6250D33319F83D1600AE9524 /* BotonStart.png in Resources */ = {isa = PBXBuildFile; fileRef = 6250D30619F83D1600AE9524 /* BotonStart.png */; };
-		6250D33419F83D1600AE9524 /* CartaAdelanteAmarillo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6250D30719F83D1600AE9524 /* CartaAdelanteAmarillo.png */; };
-		6250D33519F83D1600AE9524 /* CartaAdelanteAqua.png in Resources */ = {isa = PBXBuildFile; fileRef = 6250D30819F83D1600AE9524 /* CartaAdelanteAqua.png */; };
-		6250D33619F83D1600AE9524 /* CartaAdelanteAzul.png in Resources */ = {isa = PBXBuildFile; fileRef = 6250D30919F83D1600AE9524 /* CartaAdelanteAzul.png */; };
-		6250D33719F83D1600AE9524 /* CartaAdelanteNaranja.png in Resources */ = {isa = PBXBuildFile; fileRef = 6250D30A19F83D1600AE9524 /* CartaAdelanteNaranja.png */; };
-		6250D33819F83D1600AE9524 /* CartaAdelanteRoja.png in Resources */ = {isa = PBXBuildFile; fileRef = 6250D30B19F83D1600AE9524 /* CartaAdelanteRoja.png */; };
-		6250D33919F83D1600AE9524 /* CartaAdelanteRoja2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6250D30C19F83D1600AE9524 /* CartaAdelanteRoja2.png */; };
-		6250D33A19F83D1600AE9524 /* CartaAdelanteRosa.png in Resources */ = {isa = PBXBuildFile; fileRef = 6250D30D19F83D1600AE9524 /* CartaAdelanteRosa.png */; };
-		6250D33B19F83D1600AE9524 /* CartaAdelanteRosa2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6250D30E19F83D1600AE9524 /* CartaAdelanteRosa2.png */; };
-		6250D33C19F83D1600AE9524 /* CartaAdelanteTurquesa.png in Resources */ = {isa = PBXBuildFile; fileRef = 6250D30F19F83D1600AE9524 /* CartaAdelanteTurquesa.png */; };
-		6250D33D19F83D1600AE9524 /* CartaAdelanteVerde.png in Resources */ = {isa = PBXBuildFile; fileRef = 6250D31019F83D1600AE9524 /* CartaAdelanteVerde.png */; };
-		6250D33E19F83D1600AE9524 /* CartaAdelanteVerdeClaro.png in Resources */ = {isa = PBXBuildFile; fileRef = 6250D31119F83D1600AE9524 /* CartaAdelanteVerdeClaro.png */; };
-		6250D33F19F83D1600AE9524 /* CartaAtrasAmarillo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6250D31219F83D1600AE9524 /* CartaAtrasAmarillo.png */; };
-		6250D34019F83D1600AE9524 /* CartaAtrasAqua.png in Resources */ = {isa = PBXBuildFile; fileRef = 6250D31319F83D1600AE9524 /* CartaAtrasAqua.png */; };
-		6250D34119F83D1600AE9524 /* CartaAtrasAzul.png in Resources */ = {isa = PBXBuildFile; fileRef = 6250D31419F83D1600AE9524 /* CartaAtrasAzul.png */; };
-		6250D34219F83D1600AE9524 /* CartaAtrasNaranja.png in Resources */ = {isa = PBXBuildFile; fileRef = 6250D31519F83D1600AE9524 /* CartaAtrasNaranja.png */; };
-		6250D34319F83D1600AE9524 /* CartaAtrasRoja.png in Resources */ = {isa = PBXBuildFile; fileRef = 6250D31619F83D1600AE9524 /* CartaAtrasRoja.png */; };
-		6250D34419F83D1600AE9524 /* CartaAtrasRoja2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6250D31719F83D1600AE9524 /* CartaAtrasRoja2.png */; };
-		6250D34519F83D1600AE9524 /* CartaAtrasRosa.png in Resources */ = {isa = PBXBuildFile; fileRef = 6250D31819F83D1600AE9524 /* CartaAtrasRosa.png */; };
-		6250D34619F83D1600AE9524 /* CartaAtrasRosa2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6250D31919F83D1600AE9524 /* CartaAtrasRosa2.png */; };
-		6250D34719F83D1600AE9524 /* CartaAtrasTurquesa.png in Resources */ = {isa = PBXBuildFile; fileRef = 6250D31A19F83D1600AE9524 /* CartaAtrasTurquesa.png */; };
-		6250D34819F83D1600AE9524 /* CartaAtrasVerde.png in Resources */ = {isa = PBXBuildFile; fileRef = 6250D31B19F83D1600AE9524 /* CartaAtrasVerde.png */; };
-		6250D34919F83D1600AE9524 /* CartaAtrasVerdeClaro.png in Resources */ = {isa = PBXBuildFile; fileRef = 6250D31C19F83D1600AE9524 /* CartaAtrasVerdeClaro.png */; };
-		6250D34A19F83D1600AE9524 /* Farm.png in Resources */ = {isa = PBXBuildFile; fileRef = 6250D31D19F83D1600AE9524 /* Farm.png */; };
-		6250D34B19F83D1600AE9524 /* FarmLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6250D31E19F83D1600AE9524 /* FarmLogo.png */; };
-		6250D34C19F83D1600AE9524 /* Fashion.png in Resources */ = {isa = PBXBuildFile; fileRef = 6250D31F19F83D1600AE9524 /* Fashion.png */; };
-		6250D34D19F83D1600AE9524 /* Food.png in Resources */ = {isa = PBXBuildFile; fileRef = 6250D32019F83D1600AE9524 /* Food.png */; };
-		6250D34E19F83D1600AE9524 /* History.png in Resources */ = {isa = PBXBuildFile; fileRef = 6250D32119F83D1600AE9524 /* History.png */; };
-		6250D34F19F83D1600AE9524 /* ipadBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6250D32219F83D1600AE9524 /* ipadBackground.jpg */; };
-		6250D35019F83D1600AE9524 /* ipadBackgroundPantallaInicio.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6250D32319F83D1600AE9524 /* ipadBackgroundPantallaInicio.jpg */; };
-		6250D35119F83D1600AE9524 /* Loser.png in Resources */ = {isa = PBXBuildFile; fileRef = 6250D32419F83D1600AE9524 /* Loser.png */; };
-		6250D35219F83D1600AE9524 /* Menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 6250D32519F83D1600AE9524 /* Menu.png */; };
-		6250D35319F83D1600AE9524 /* Movies.png in Resources */ = {isa = PBXBuildFile; fileRef = 6250D32619F83D1600AE9524 /* Movies.png */; };
-		6250D35419F83D1600AE9524 /* PantallaInicioIpad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6250D32719F83D1600AE9524 /* PantallaInicioIpad.jpg */; };
-		6250D35519F83D1600AE9524 /* Quotes.png in Resources */ = {isa = PBXBuildFile; fileRef = 6250D32819F83D1600AE9524 /* Quotes.png */; };
-		6250D35619F83D1600AE9524 /* Science.png in Resources */ = {isa = PBXBuildFile; fileRef = 6250D32919F83D1600AE9524 /* Science.png */; };
-		6250D35719F83D1600AE9524 /* Scores.png in Resources */ = {isa = PBXBuildFile; fileRef = 6250D32A19F83D1600AE9524 /* Scores.png */; };
-		6250D35819F83D1600AE9524 /* Sports.png in Resources */ = {isa = PBXBuildFile; fileRef = 6250D32B19F83D1600AE9524 /* Sports.png */; };
-		6250D35919F83D1600AE9524 /* TravelTourism.png in Resources */ = {isa = PBXBuildFile; fileRef = 6250D32C19F83D1600AE9524 /* TravelTourism.png */; };
-		6250D35A19F83D1600AE9524 /* TriviaramaLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6250D32D19F83D1600AE9524 /* TriviaramaLogo.png */; };
-		6250D35B19F83D1600AE9524 /* Winner.png in Resources */ = {isa = PBXBuildFile; fileRef = 6250D32E19F83D1600AE9524 /* Winner.png */; };
-		6250D35C19F83D1600AE9524 /* WordOrigins.png in Resources */ = {isa = PBXBuildFile; fileRef = 6250D32F19F83D1600AE9524 /* WordOrigins.png */; };
->>>>>>> FETCH_HEAD
 		6250D36019F8895D00AE9524 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6250D35F19F8895D00AE9524 /* MenuViewController.m */; };
 		6250D36319F8898D00AE9524 /* ScoresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6250D36219F8898D00AE9524 /* ScoresViewController.m */; };
 		6250D36619F889B200AE9524 /* FARMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6250D36519F889B200AE9524 /* FARMViewController.m */; };
 		6250D36919F889D500AE9524 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6250D36819F889D500AE9524 /* GameViewController.m */; };
-<<<<<<< HEAD
-=======
-		62567D4819F3233900F33BB8 /* FarmLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 62567D4519F3233900F33BB8 /* FarmLogo.png */; };
-		62567D4919F3233900F33BB8 /* ipadBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 62567D4619F3233900F33BB8 /* ipadBackground.jpg */; };
-		62567D4A19F3233900F33BB8 /* TriviaramaLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 62567D4719F3233900F33BB8 /* TriviaramaLogo.png */; };
-		62567D4D19F327D200F33BB8 /* BotonScores.png in Resources */ = {isa = PBXBuildFile; fileRef = 62567D4B19F327D200F33BB8 /* BotonScores.png */; };
-		62567D4E19F327D200F33BB8 /* BotonStart.png in Resources */ = {isa = PBXBuildFile; fileRef = 62567D4C19F327D200F33BB8 /* BotonStart.png */; };
-		62567D5019F32A0900F33BB8 /* ipadBackgroundPantallaInicio.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 62567D4F19F32A0900F33BB8 /* ipadBackgroundPantallaInicio.jpg */; };
->>>>>>> FETCH_HEAD
 		62570D1E19F954990038B2C2 /* CustomNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62570D1D19F954990038B2C2 /* CustomNavigationController.m */; };
 		62896C4019F31E6C00224684 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 62896C3F19F31E6C00224684 /* main.m */; };
 		62896C4319F31E6C00224684 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 62896C4219F31E6C00224684 /* AppDelegate.m */; };
@@ -134,7 +77,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-<<<<<<< HEAD
 		623C05C919F9B5F500C33725 /* Animals.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Animals.png; path = ../Animals.png; sourceTree = "<group>"; };
 		623C05CA19F9B5F500C33725 /* BooksAuthors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BooksAuthors.png; path = ../BooksAuthors.png; sourceTree = "<group>"; };
 		623C05CB19F9B5F500C33725 /* BotonScores.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BotonScores.png; path = ../BotonScores.png; sourceTree = "<group>"; };
@@ -180,53 +122,6 @@
 		623C05F319F9B5F500C33725 /* TriviaramaLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TriviaramaLogo.png; sourceTree = SOURCE_ROOT; };
 		623C05F419F9B5F500C33725 /* Winner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Winner.png; path = ../Winner.png; sourceTree = "<group>"; };
 		623C05F519F9B5F500C33725 /* WordOrigins.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = WordOrigins.png; path = ../WordOrigins.png; sourceTree = "<group>"; };
-=======
-		6250D30319F83D1600AE9524 /* Animals.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Animals.png; path = ../../../Triviarama/Imagenes/Animals.png; sourceTree = "<group>"; };
-		6250D30419F83D1600AE9524 /* BooksAuthors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BooksAuthors.png; path = ../../../Triviarama/Imagenes/BooksAuthors.png; sourceTree = "<group>"; };
-		6250D30519F83D1600AE9524 /* BotonScores.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BotonScores.png; path = ../../../Triviarama/Imagenes/BotonScores.png; sourceTree = "<group>"; };
-		6250D30619F83D1600AE9524 /* BotonStart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BotonStart.png; path = ../../../Triviarama/Imagenes/BotonStart.png; sourceTree = "<group>"; };
-		6250D30719F83D1600AE9524 /* CartaAdelanteAmarillo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CartaAdelanteAmarillo.png; path = ../../../Triviarama/Imagenes/CartaAdelanteAmarillo.png; sourceTree = "<group>"; };
-		6250D30819F83D1600AE9524 /* CartaAdelanteAqua.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CartaAdelanteAqua.png; path = ../../../Triviarama/Imagenes/CartaAdelanteAqua.png; sourceTree = "<group>"; };
-		6250D30919F83D1600AE9524 /* CartaAdelanteAzul.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CartaAdelanteAzul.png; path = ../../../Triviarama/Imagenes/CartaAdelanteAzul.png; sourceTree = "<group>"; };
-		6250D30A19F83D1600AE9524 /* CartaAdelanteNaranja.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CartaAdelanteNaranja.png; path = ../../../Triviarama/Imagenes/CartaAdelanteNaranja.png; sourceTree = "<group>"; };
-		6250D30B19F83D1600AE9524 /* CartaAdelanteRoja.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CartaAdelanteRoja.png; path = ../../../Triviarama/Imagenes/CartaAdelanteRoja.png; sourceTree = "<group>"; };
-		6250D30C19F83D1600AE9524 /* CartaAdelanteRoja2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CartaAdelanteRoja2.png; path = ../../../Triviarama/Imagenes/CartaAdelanteRoja2.png; sourceTree = "<group>"; };
-		6250D30D19F83D1600AE9524 /* CartaAdelanteRosa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CartaAdelanteRosa.png; path = ../../../Triviarama/Imagenes/CartaAdelanteRosa.png; sourceTree = "<group>"; };
-		6250D30E19F83D1600AE9524 /* CartaAdelanteRosa2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CartaAdelanteRosa2.png; path = ../../../Triviarama/Imagenes/CartaAdelanteRosa2.png; sourceTree = "<group>"; };
-		6250D30F19F83D1600AE9524 /* CartaAdelanteTurquesa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CartaAdelanteTurquesa.png; path = ../../../Triviarama/Imagenes/CartaAdelanteTurquesa.png; sourceTree = "<group>"; };
-		6250D31019F83D1600AE9524 /* CartaAdelanteVerde.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CartaAdelanteVerde.png; path = ../../../Triviarama/Imagenes/CartaAdelanteVerde.png; sourceTree = "<group>"; };
-		6250D31119F83D1600AE9524 /* CartaAdelanteVerdeClaro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CartaAdelanteVerdeClaro.png; path = ../../../Triviarama/Imagenes/CartaAdelanteVerdeClaro.png; sourceTree = "<group>"; };
-		6250D31219F83D1600AE9524 /* CartaAtrasAmarillo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CartaAtrasAmarillo.png; path = ../../../Triviarama/Imagenes/CartaAtrasAmarillo.png; sourceTree = "<group>"; };
-		6250D31319F83D1600AE9524 /* CartaAtrasAqua.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CartaAtrasAqua.png; path = ../../../Triviarama/Imagenes/CartaAtrasAqua.png; sourceTree = "<group>"; };
-		6250D31419F83D1600AE9524 /* CartaAtrasAzul.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CartaAtrasAzul.png; path = ../../../Triviarama/Imagenes/CartaAtrasAzul.png; sourceTree = "<group>"; };
-		6250D31519F83D1600AE9524 /* CartaAtrasNaranja.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CartaAtrasNaranja.png; path = ../../../Triviarama/Imagenes/CartaAtrasNaranja.png; sourceTree = "<group>"; };
-		6250D31619F83D1600AE9524 /* CartaAtrasRoja.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CartaAtrasRoja.png; path = ../../../Triviarama/Imagenes/CartaAtrasRoja.png; sourceTree = "<group>"; };
-		6250D31719F83D1600AE9524 /* CartaAtrasRoja2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CartaAtrasRoja2.png; path = ../../../Triviarama/Imagenes/CartaAtrasRoja2.png; sourceTree = "<group>"; };
-		6250D31819F83D1600AE9524 /* CartaAtrasRosa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CartaAtrasRosa.png; path = ../../../Triviarama/Imagenes/CartaAtrasRosa.png; sourceTree = "<group>"; };
-		6250D31919F83D1600AE9524 /* CartaAtrasRosa2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CartaAtrasRosa2.png; path = ../../../Triviarama/Imagenes/CartaAtrasRosa2.png; sourceTree = "<group>"; };
-		6250D31A19F83D1600AE9524 /* CartaAtrasTurquesa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CartaAtrasTurquesa.png; path = ../../../Triviarama/Imagenes/CartaAtrasTurquesa.png; sourceTree = "<group>"; };
-		6250D31B19F83D1600AE9524 /* CartaAtrasVerde.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CartaAtrasVerde.png; path = ../../../Triviarama/Imagenes/CartaAtrasVerde.png; sourceTree = "<group>"; };
-		6250D31C19F83D1600AE9524 /* CartaAtrasVerdeClaro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CartaAtrasVerdeClaro.png; path = ../../../Triviarama/Imagenes/CartaAtrasVerdeClaro.png; sourceTree = "<group>"; };
-		6250D31D19F83D1600AE9524 /* Farm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Farm.png; path = ../../../Triviarama/Imagenes/Farm.png; sourceTree = "<group>"; };
-		6250D31E19F83D1600AE9524 /* FarmLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FarmLogo.png; path = ../../../Triviarama/Imagenes/FarmLogo.png; sourceTree = "<group>"; };
-		6250D31F19F83D1600AE9524 /* Fashion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Fashion.png; path = ../../../Triviarama/Imagenes/Fashion.png; sourceTree = "<group>"; };
-		6250D32019F83D1600AE9524 /* Food.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Food.png; path = ../../../Triviarama/Imagenes/Food.png; sourceTree = "<group>"; };
-		6250D32119F83D1600AE9524 /* History.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = History.png; path = ../../../Triviarama/Imagenes/History.png; sourceTree = "<group>"; };
-		6250D32219F83D1600AE9524 /* ipadBackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ipadBackground.jpg; path = ../../../Triviarama/Imagenes/ipadBackground.jpg; sourceTree = "<group>"; };
-		6250D32319F83D1600AE9524 /* ipadBackgroundPantallaInicio.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ipadBackgroundPantallaInicio.jpg; path = ../../../Triviarama/Imagenes/ipadBackgroundPantallaInicio.jpg; sourceTree = "<group>"; };
-		6250D32419F83D1600AE9524 /* Loser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Loser.png; path = ../../../Triviarama/Imagenes/Loser.png; sourceTree = "<group>"; };
-		6250D32519F83D1600AE9524 /* Menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Menu.png; path = ../../../Triviarama/Imagenes/Menu.png; sourceTree = "<group>"; };
-		6250D32619F83D1600AE9524 /* Movies.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Movies.png; path = ../../../Triviarama/Imagenes/Movies.png; sourceTree = "<group>"; };
-		6250D32719F83D1600AE9524 /* PantallaInicioIpad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = PantallaInicioIpad.jpg; path = ../../../Triviarama/Imagenes/PantallaInicioIpad.jpg; sourceTree = "<group>"; };
-		6250D32819F83D1600AE9524 /* Quotes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Quotes.png; path = ../../../Triviarama/Imagenes/Quotes.png; sourceTree = "<group>"; };
-		6250D32919F83D1600AE9524 /* Science.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Science.png; path = ../../../Triviarama/Imagenes/Science.png; sourceTree = "<group>"; };
-		6250D32A19F83D1600AE9524 /* Scores.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Scores.png; path = ../../../Triviarama/Imagenes/Scores.png; sourceTree = "<group>"; };
-		6250D32B19F83D1600AE9524 /* Sports.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Sports.png; path = ../../../Triviarama/Imagenes/Sports.png; sourceTree = "<group>"; };
-		6250D32C19F83D1600AE9524 /* TravelTourism.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TravelTourism.png; path = ../../../Triviarama/Imagenes/TravelTourism.png; sourceTree = "<group>"; };
-		6250D32D19F83D1600AE9524 /* TriviaramaLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TriviaramaLogo.png; path = ../../../Triviarama/Imagenes/TriviaramaLogo.png; sourceTree = "<group>"; };
-		6250D32E19F83D1600AE9524 /* Winner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Winner.png; path = ../../../Triviarama/Imagenes/Winner.png; sourceTree = "<group>"; };
-		6250D32F19F83D1600AE9524 /* WordOrigins.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = WordOrigins.png; path = ../../../Triviarama/Imagenes/WordOrigins.png; sourceTree = "<group>"; };
->>>>>>> FETCH_HEAD
 		6250D35E19F8895D00AE9524 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		6250D35F19F8895D00AE9524 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		6250D36119F8898D00AE9524 /* ScoresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoresViewController.h; sourceTree = "<group>"; };
@@ -235,15 +130,6 @@
 		6250D36519F889B200AE9524 /* FARMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FARMViewController.m; sourceTree = "<group>"; };
 		6250D36719F889D500AE9524 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		6250D36819F889D500AE9524 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
-<<<<<<< HEAD
-=======
-		62567D4519F3233900F33BB8 /* FarmLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FarmLogo.png; sourceTree = "<group>"; };
-		62567D4619F3233900F33BB8 /* ipadBackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ipadBackground.jpg; sourceTree = "<group>"; };
-		62567D4719F3233900F33BB8 /* TriviaramaLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TriviaramaLogo.png; sourceTree = "<group>"; };
-		62567D4B19F327D200F33BB8 /* BotonScores.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BotonScores.png; sourceTree = "<group>"; };
-		62567D4C19F327D200F33BB8 /* BotonStart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BotonStart.png; sourceTree = "<group>"; };
-		62567D4F19F32A0900F33BB8 /* ipadBackgroundPantallaInicio.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ipadBackgroundPantallaInicio.jpg; sourceTree = "<group>"; };
->>>>>>> FETCH_HEAD
 		62570D1A19F951B50038B2C2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		62570D1C19F954990038B2C2 /* CustomNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavigationController.h; sourceTree = "<group>"; };
 		62570D1D19F954990038B2C2 /* CustomNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationController.m; sourceTree = "<group>"; };
@@ -300,7 +186,6 @@
 		62567D4419F322A800F33BB8 /* images */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
 				623C05C919F9B5F500C33725 /* Animals.png */,
 				623C05CA19F9B5F500C33725 /* BooksAuthors.png */,
 				623C05CB19F9B5F500C33725 /* BotonScores.png */,
@@ -346,59 +231,6 @@
 				623C05F319F9B5F500C33725 /* TriviaramaLogo.png */,
 				623C05F419F9B5F500C33725 /* Winner.png */,
 				623C05F519F9B5F500C33725 /* WordOrigins.png */,
-=======
-				62567D4F19F32A0900F33BB8 /* ipadBackgroundPantallaInicio.jpg */,
-				62567D4B19F327D200F33BB8 /* BotonScores.png */,
-				62567D4C19F327D200F33BB8 /* BotonStart.png */,
-				6250D30319F83D1600AE9524 /* Animals.png */,
-				6250D30419F83D1600AE9524 /* BooksAuthors.png */,
-				6250D30519F83D1600AE9524 /* BotonScores.png */,
-				6250D30619F83D1600AE9524 /* BotonStart.png */,
-				6250D30719F83D1600AE9524 /* CartaAdelanteAmarillo.png */,
-				6250D30819F83D1600AE9524 /* CartaAdelanteAqua.png */,
-				6250D30919F83D1600AE9524 /* CartaAdelanteAzul.png */,
-				6250D30A19F83D1600AE9524 /* CartaAdelanteNaranja.png */,
-				6250D30B19F83D1600AE9524 /* CartaAdelanteRoja.png */,
-				6250D30C19F83D1600AE9524 /* CartaAdelanteRoja2.png */,
-				6250D30D19F83D1600AE9524 /* CartaAdelanteRosa.png */,
-				6250D30E19F83D1600AE9524 /* CartaAdelanteRosa2.png */,
-				6250D30F19F83D1600AE9524 /* CartaAdelanteTurquesa.png */,
-				6250D31019F83D1600AE9524 /* CartaAdelanteVerde.png */,
-				6250D31119F83D1600AE9524 /* CartaAdelanteVerdeClaro.png */,
-				6250D31219F83D1600AE9524 /* CartaAtrasAmarillo.png */,
-				6250D31319F83D1600AE9524 /* CartaAtrasAqua.png */,
-				6250D31419F83D1600AE9524 /* CartaAtrasAzul.png */,
-				6250D31519F83D1600AE9524 /* CartaAtrasNaranja.png */,
-				6250D31619F83D1600AE9524 /* CartaAtrasRoja.png */,
-				6250D31719F83D1600AE9524 /* CartaAtrasRoja2.png */,
-				6250D31819F83D1600AE9524 /* CartaAtrasRosa.png */,
-				6250D31919F83D1600AE9524 /* CartaAtrasRosa2.png */,
-				6250D31A19F83D1600AE9524 /* CartaAtrasTurquesa.png */,
-				6250D31B19F83D1600AE9524 /* CartaAtrasVerde.png */,
-				6250D31C19F83D1600AE9524 /* CartaAtrasVerdeClaro.png */,
-				6250D31D19F83D1600AE9524 /* Farm.png */,
-				6250D31E19F83D1600AE9524 /* FarmLogo.png */,
-				6250D31F19F83D1600AE9524 /* Fashion.png */,
-				6250D32019F83D1600AE9524 /* Food.png */,
-				6250D32119F83D1600AE9524 /* History.png */,
-				6250D32219F83D1600AE9524 /* ipadBackground.jpg */,
-				6250D32319F83D1600AE9524 /* ipadBackgroundPantallaInicio.jpg */,
-				6250D32419F83D1600AE9524 /* Loser.png */,
-				6250D32519F83D1600AE9524 /* Menu.png */,
-				6250D32619F83D1600AE9524 /* Movies.png */,
-				6250D32719F83D1600AE9524 /* PantallaInicioIpad.jpg */,
-				6250D32819F83D1600AE9524 /* Quotes.png */,
-				6250D32919F83D1600AE9524 /* Science.png */,
-				6250D32A19F83D1600AE9524 /* Scores.png */,
-				6250D32B19F83D1600AE9524 /* Sports.png */,
-				6250D32C19F83D1600AE9524 /* TravelTourism.png */,
-				6250D32D19F83D1600AE9524 /* TriviaramaLogo.png */,
-				6250D32E19F83D1600AE9524 /* Winner.png */,
-				6250D32F19F83D1600AE9524 /* WordOrigins.png */,
-				62567D4519F3233900F33BB8 /* FarmLogo.png */,
-				62567D4619F3233900F33BB8 /* ipadBackground.jpg */,
-				62567D4719F3233900F33BB8 /* TriviaramaLogo.png */,
->>>>>>> FETCH_HEAD
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -545,7 +377,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< HEAD
 				623C05FD19F9B5F500C33725 /* CartaAdelanteNaranja.png in Resources */,
 				623C05FE19F9B5F500C33725 /* CartaAdelanteRoja.png in Resources */,
 				62896C4919F31E6C00224684 /* Main.storyboard in Resources */,
@@ -594,62 +425,6 @@
 				623C060919F9B5F500C33725 /* CartaAtrasRoja.png in Resources */,
 				623C061619F9B5F500C33725 /* ipadBackgroundPantallaInicio.jpg in Resources */,
 				623C060B19F9B5F500C33725 /* CartaAtrasRosa.png in Resources */,
-=======
-				6250D33319F83D1600AE9524 /* BotonStart.png in Resources */,
-				6250D33F19F83D1600AE9524 /* CartaAtrasAmarillo.png in Resources */,
-				6250D35719F83D1600AE9524 /* Scores.png in Resources */,
-				62896C4919F31E6C00224684 /* Main.storyboard in Resources */,
-				6250D33019F83D1600AE9524 /* Animals.png in Resources */,
-				62567D4E19F327D200F33BB8 /* BotonStart.png in Resources */,
-				6250D34319F83D1600AE9524 /* CartaAtrasRoja.png in Resources */,
-				6250D34019F83D1600AE9524 /* CartaAtrasAqua.png in Resources */,
-				6250D33419F83D1600AE9524 /* CartaAdelanteAmarillo.png in Resources */,
-				6250D34E19F83D1600AE9524 /* History.png in Resources */,
-				62896C4E19F31E6C00224684 /* LaunchScreen.xib in Resources */,
-				6250D34A19F83D1600AE9524 /* Farm.png in Resources */,
-				62567D4D19F327D200F33BB8 /* BotonScores.png in Resources */,
-				6250D33819F83D1600AE9524 /* CartaAdelanteRoja.png in Resources */,
-				62567D4819F3233900F33BB8 /* FarmLogo.png in Resources */,
-				6250D34919F83D1600AE9524 /* CartaAtrasVerdeClaro.png in Resources */,
-				6250D33119F83D1600AE9524 /* BooksAuthors.png in Resources */,
-				6250D33219F83D1600AE9524 /* BotonScores.png in Resources */,
-				6250D35419F83D1600AE9524 /* PantallaInicioIpad.jpg in Resources */,
-				6250D35C19F83D1600AE9524 /* WordOrigins.png in Resources */,
-				6250D33B19F83D1600AE9524 /* CartaAdelanteRosa2.png in Resources */,
-				62896C4B19F31E6C00224684 /* Images.xcassets in Resources */,
-				6250D35519F83D1600AE9524 /* Quotes.png in Resources */,
-				6250D35819F83D1600AE9524 /* Sports.png in Resources */,
-				6250D34D19F83D1600AE9524 /* Food.png in Resources */,
-				6250D33C19F83D1600AE9524 /* CartaAdelanteTurquesa.png in Resources */,
-				62567D4A19F3233900F33BB8 /* TriviaramaLogo.png in Resources */,
-				6250D34C19F83D1600AE9524 /* Fashion.png in Resources */,
-				62567D5019F32A0900F33BB8 /* ipadBackgroundPantallaInicio.jpg in Resources */,
-				6250D34619F83D1600AE9524 /* CartaAtrasRosa2.png in Resources */,
-				6250D33A19F83D1600AE9524 /* CartaAdelanteRosa.png in Resources */,
-				6250D35A19F83D1600AE9524 /* TriviaramaLogo.png in Resources */,
-				6250D35919F83D1600AE9524 /* TravelTourism.png in Resources */,
-				6250D33D19F83D1600AE9524 /* CartaAdelanteVerde.png in Resources */,
-				6250D34819F83D1600AE9524 /* CartaAtrasVerde.png in Resources */,
-				6250D33919F83D1600AE9524 /* CartaAdelanteRoja2.png in Resources */,
-				6250D34719F83D1600AE9524 /* CartaAtrasTurquesa.png in Resources */,
-				6250D35319F83D1600AE9524 /* Movies.png in Resources */,
-				6250D34219F83D1600AE9524 /* CartaAtrasNaranja.png in Resources */,
-				6250D33619F83D1600AE9524 /* CartaAdelanteAzul.png in Resources */,
-				6250D35219F83D1600AE9524 /* Menu.png in Resources */,
-				6250D34519F83D1600AE9524 /* CartaAtrasRosa.png in Resources */,
-				6250D34119F83D1600AE9524 /* CartaAtrasAzul.png in Resources */,
-				6250D35019F83D1600AE9524 /* ipadBackgroundPantallaInicio.jpg in Resources */,
-				6250D33719F83D1600AE9524 /* CartaAdelanteNaranja.png in Resources */,
-				6250D35B19F83D1600AE9524 /* Winner.png in Resources */,
-				6250D35619F83D1600AE9524 /* Science.png in Resources */,
-				6250D33519F83D1600AE9524 /* CartaAdelanteAqua.png in Resources */,
-				6250D33E19F83D1600AE9524 /* CartaAdelanteVerdeClaro.png in Resources */,
-				6250D34B19F83D1600AE9524 /* FarmLogo.png in Resources */,
-				6250D34419F83D1600AE9524 /* CartaAtrasRoja2.png in Resources */,
-				62567D4919F3233900F33BB8 /* ipadBackground.jpg in Resources */,
-				6250D34F19F83D1600AE9524 /* ipadBackground.jpg in Resources */,
-				6250D35119F83D1600AE9524 /* Loser.png in Resources */,
->>>>>>> FETCH_HEAD
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

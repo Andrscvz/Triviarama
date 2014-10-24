@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /*
  Archivo: MenuViewController.m
  Proyecto: Triviarama
@@ -35,15 +34,6 @@
  Fernando Javier Garza Brambila – A01034753
  Marialicia Villarreal García – A00811095
  */
-=======
-//
-//  MenuViewController.m
-//  Triviarama
-//
-//  Created by Rob on 22/10/14.
-//  Copyright (c) 2014 ITESM. All rights reserved.
-//
->>>>>>> FETCH_HEAD
 
 #import "MenuViewController.h"
 
@@ -57,11 +47,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-<<<<<<< HEAD
     self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"ipadBackground.jpg"]];
-=======
-    self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"ipadBackgroundPantallaInicio.jpg"]];
->>>>>>> FETCH_HEAD
     levels=[[NSArray alloc] initWithObjects:@"Easy", @"Medium", @"Hard", nil];
     categories=[[NSArray alloc] initWithObjects:@"Animals", @"Books & Authors", @"Fashion", @"Food",@"History",@"Quotes", @"Science",@"Sports",@"Travel & Tourism", @"The Movies", @"Word Origins", nil];
     self.levelsTableView.delegate = self;
@@ -92,26 +78,6 @@
     // Pass the selected object to the new view controller.
 }
 
-<<<<<<< HEAD
-=======
-- (UITableViewCell *)tableView:(UITableView *)tableView
-         cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell;
-    if(self.levelsTableView ==tableView){
-        cell= [tableView dequeueReusableCellWithIdentifier:@"level" forIndexPath:indexPath];
-        cell.textLabel.text= levels[indexPath.row];
-    }
-    else{
-        cell= [tableView dequeueReusableCellWithIdentifier:@"category" forIndexPath:indexPath];
-        cell.textLabel.text= categories[indexPath.row];
-    }
-        cell.backgroundColor=[UIColor clearColor];
-        cell.opaque= NO;
-        cell.backgroundView=nil;
-    return cell;
-}
-
->>>>>>> FETCH_HEAD
 */
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath{
