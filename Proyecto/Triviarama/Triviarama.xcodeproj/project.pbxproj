@@ -64,6 +64,7 @@
 		62896C4B19F31E6C00224684 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62896C4A19F31E6C00224684 /* Images.xcassets */; };
 		62896C4E19F31E6C00224684 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62896C4C19F31E6C00224684 /* LaunchScreen.xib */; };
 		62896C5A19F31E6C00224684 /* TriviaramaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62896C5919F31E6C00224684 /* TriviaramaTests.m */; };
+		965279F319FB7CF7006DC17F /* Scores.plist in Resources */ = {isa = PBXBuildFile; fileRef = 965279F219FB7CF7006DC17F /* Scores.plist */; };
 		96E86C4F19FB3A3700BA059B /* Scores.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 96E86C4D19FB3A3700BA059B /* Scores.xcdatamodeld */; };
 		96E86C5219FB3CDB00BA059B /* Scores.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E86C5119FB3CDB00BA059B /* Scores.m */; };
 		96E86C5419FB3D2500BA059B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E86C5319FB3D2500BA059B /* CoreGraphics.framework */; };
@@ -152,6 +153,7 @@
 		62896C5319F31E6C00224684 /* TriviaramaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TriviaramaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		62896C5819F31E6C00224684 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62896C5919F31E6C00224684 /* TriviaramaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TriviaramaTests.m; sourceTree = "<group>"; };
+		965279F219FB7CF7006DC17F /* Scores.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Scores.plist; sourceTree = "<group>"; };
 		96E86C4E19FB3A3700BA059B /* Scores.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Scores.xcdatamodel; sourceTree = "<group>"; };
 		96E86C5019FB3CDB00BA059B /* Scores.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scores.h; sourceTree = "<group>"; };
 		96E86C5119FB3CDB00BA059B /* Scores.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scores.m; sourceTree = "<group>"; };
@@ -288,6 +290,7 @@
 				62570D1D19F954990038B2C2 /* CustomNavigationController.m */,
 				62896C4A19F31E6C00224684 /* Images.xcassets */,
 				62896C4C19F31E6C00224684 /* LaunchScreen.xib */,
+				965279F219FB7CF7006DC17F /* Scores.plist */,
 			);
 			path = Triviarama;
 			sourceTree = "<group>";
@@ -464,6 +467,7 @@
 				623C060919F9B5F500C33725 /* CartaAtrasRoja.png in Resources */,
 				623C061619F9B5F500C33725 /* ipadBackgroundPantallaInicio.jpg in Resources */,
 				623C060B19F9B5F500C33725 /* CartaAtrasRosa.png in Resources */,
+				965279F319FB7CF7006DC17F /* Scores.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
