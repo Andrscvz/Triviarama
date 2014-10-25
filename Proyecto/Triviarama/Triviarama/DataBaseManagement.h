@@ -15,23 +15,18 @@
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
+- (NSURL *)applicationDocumentsDirectory;
+-(void)saveContext;
+
 
 @property (strong, nonatomic) NSMutableArray *scoreList;
 
 - (id) init;
-+ (DataBaseManagement *) instancia;
 
-- (void)insertarMascota:(id) mascota conVacunas:(NSArray *)vacunas;
++ (DataBaseManagement *) instance;
 
-- (Vacunas *)insertarVacuna:(id)datosVacuna;
+- (void)insertScore:(id) score;
 
-- (NSMutableArray *) cargarMascotas;
-
-- (void) cargarVacunas;
-
-- (id) buscarVacuna:(NSString *) nombre;
-
-- (NSArray *) buscarVacunasParaMascota:(NSString *) nombre;
-
+- (NSMutableArray *) loadScore;
 
 @end
