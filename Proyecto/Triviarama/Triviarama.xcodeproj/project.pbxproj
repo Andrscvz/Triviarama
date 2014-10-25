@@ -275,11 +275,11 @@
 		62896C3C19F31E6C00224684 /* Triviarama */ = {
 			isa = PBXGroup;
 			children = (
-				96E86C4D19FB3A3700BA059B /* Scores.xcdatamodeld */,
-				96E86C5819FB3D8A00BA059B /* Clases */,
 				62896C4719F31E6C00224684 /* Main.storyboard */,
+				96E86C4D19FB3A3700BA059B /* Scores.xcdatamodeld */,
 				6250D35D19F887FA00AE9524 /* ViewControllers */,
 				62567D4419F322A800F33BB8 /* images */,
+				96E86C5819FB3D8A00BA059B /* Clases */,
 				62896C4119F31E6C00224684 /* AppDelegate.h */,
 				62896C4219F31E6C00224684 /* AppDelegate.m */,
 				96E86C5C19FB4B9800BA059B /* DataBaseManagement */,

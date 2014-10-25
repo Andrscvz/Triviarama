@@ -110,6 +110,60 @@
 	return _instancia;
 }
 
+-(void)insertScore:(id)score
+{
+	NSManagedObjectContext *context = self.managedObjectContext;
+	Scores *nueva = [NSEntityDescription insertNewObjectForEntityForName:@"Scores" inManagedObjectContext:context];
+	NSDictionary *scores = (NSDictionary *)score;
+	nueva.id = [scores objectForKey: @"id"];
+    nueva.nombre = [scores objectForKey:@"nombre"];
+	nueva.points = [scores objectForKey:@"points"];
+	nueva.score = [scores objectForKey:@"score"];
+    nueva.time = [scores objectForKey:@"time"];
+    nueva.wrongMoves = [scores objectForKey:@"wrongMoves"];
+    
+	[self saveContext];
+}
+
+
+-(NSMutableArray*)loadScore
+{
+    NSManagedObjectContext *context = self.managedObjectContext;
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Scores" inManagedObjectContext:context];
+	[request setEntity:entity];
+	
+	NSError *error;
+	NSMutableArray *results = (NSMutableArray*)[context executeFetchRequest:request error:&error];
+    Scores *temp;
+	
+	if(results.count==0){
+		NSLog(@"There are no scores saved...");
+        //[self cargaMascotasPlist];
+        return NULL;
+	}else{
+        if (_scoreList) {
+            _scoreList = [[NSMutableArray alloc] init];
+        }
+        for (int i = 0; i < results.count; i++) {
+            temp = results[i];
+
+            NSMutableDictionary *miDicc = [[NSMutableDictionary alloc]initWithObjectsAndKeys:
+                                           [temp valueForKey:@"id"], @"id",
+                                           [temp valueForKey:@"nombre"], @"nombre",
+                                           [temp valueForKey:@"points"], @"points",
+                                           [temp valueForKey:@"score"], @"score" ,
+                                           [temp valueForKey:@"time"], @"time" ,
+                                           [temp valueForKey:@"wrongMoves"], @"wrongMoves" ,nil];
+            
+            [self.scoreList addObject:miDicc];
+        
+        }
+        
+        return self.scoreList;
+	}
+
+}
 
 @end
 

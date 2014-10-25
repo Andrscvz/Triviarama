@@ -13,7 +13,7 @@
 @property (nonatomic, retain) NSDecimalNumber * id;
 @property (nonatomic, retain) NSString * nombre;
 @property (nonatomic, retain) NSDecimalNumber * points;
-@property (nonatomic, assign) CGFloat score;
+@property (nonatomic, retain) NSDecimalNumber * score;
 @property (nonatomic, retain) NSString * time;
 @property (nonatomic, retain) NSDecimalNumber * wrongMoves;
 
