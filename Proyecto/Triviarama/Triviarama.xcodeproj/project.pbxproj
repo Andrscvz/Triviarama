@@ -64,6 +64,12 @@
 		62896C4B19F31E6C00224684 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62896C4A19F31E6C00224684 /* Images.xcassets */; };
 		62896C4E19F31E6C00224684 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62896C4C19F31E6C00224684 /* LaunchScreen.xib */; };
 		62896C5A19F31E6C00224684 /* TriviaramaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62896C5919F31E6C00224684 /* TriviaramaTests.m */; };
+		96E86C4F19FB3A3700BA059B /* Scores.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 96E86C4D19FB3A3700BA059B /* Scores.xcdatamodeld */; };
+		96E86C5219FB3CDB00BA059B /* Scores.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E86C5119FB3CDB00BA059B /* Scores.m */; };
+		96E86C5419FB3D2500BA059B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E86C5319FB3D2500BA059B /* CoreGraphics.framework */; };
+		96E86C5619FB3D2E00BA059B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E86C5519FB3D2E00BA059B /* Foundation.framework */; };
+		96E86C5719FB3D3200BA059B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62570D1A19F951B50038B2C2 /* UIKit.framework */; };
+		96E86C5B19FB4B8D00BA059B /* DataBaseManagement.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E86C5A19FB4B8D00BA059B /* DataBaseManagement.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,6 +152,13 @@
 		62896C5319F31E6C00224684 /* TriviaramaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TriviaramaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		62896C5819F31E6C00224684 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62896C5919F31E6C00224684 /* TriviaramaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TriviaramaTests.m; sourceTree = "<group>"; };
+		96E86C4E19FB3A3700BA059B /* Scores.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Scores.xcdatamodel; sourceTree = "<group>"; };
+		96E86C5019FB3CDB00BA059B /* Scores.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scores.h; sourceTree = "<group>"; };
+		96E86C5119FB3CDB00BA059B /* Scores.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scores.m; sourceTree = "<group>"; };
+		96E86C5319FB3D2500BA059B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		96E86C5519FB3D2E00BA059B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		96E86C5919FB4B8D00BA059B /* DataBaseManagement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBaseManagement.h; sourceTree = "<group>"; };
+		96E86C5A19FB4B8D00BA059B /* DataBaseManagement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBaseManagement.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +166,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96E86C5619FB3D2E00BA059B /* Foundation.framework in Frameworks */,
+				96E86C5419FB3D2500BA059B /* CoreGraphics.framework in Frameworks */,
+				96E86C5719FB3D3200BA059B /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +254,8 @@
 		62896C3119F31E6C00224684 = {
 			isa = PBXGroup;
 			children = (
+				96E86C5519FB3D2E00BA059B /* Foundation.framework */,
+				96E86C5319FB3D2500BA059B /* CoreGraphics.framework */,
 				62570D1A19F951B50038B2C2 /* UIKit.framework */,
 				62896C3C19F31E6C00224684 /* Triviarama */,
 				62896C5619F31E6C00224684 /* TriviaramaTests */,
@@ -257,16 +275,19 @@
 		62896C3C19F31E6C00224684 /* Triviarama */ = {
 			isa = PBXGroup;
 			children = (
+				96E86C4D19FB3A3700BA059B /* Scores.xcdatamodeld */,
+				96E86C5819FB3D8A00BA059B /* Clases */,
+				62896C4719F31E6C00224684 /* Main.storyboard */,
 				6250D35D19F887FA00AE9524 /* ViewControllers */,
 				62567D4419F322A800F33BB8 /* images */,
 				62896C4119F31E6C00224684 /* AppDelegate.h */,
 				62896C4219F31E6C00224684 /* AppDelegate.m */,
-				62896C4719F31E6C00224684 /* Main.storyboard */,
-				62896C4A19F31E6C00224684 /* Images.xcassets */,
-				62896C4C19F31E6C00224684 /* LaunchScreen.xib */,
+				96E86C5C19FB4B9800BA059B /* DataBaseManagement */,
 				62896C3D19F31E6C00224684 /* Supporting Files */,
 				62570D1C19F954990038B2C2 /* CustomNavigationController.h */,
 				62570D1D19F954990038B2C2 /* CustomNavigationController.m */,
+				62896C4A19F31E6C00224684 /* Images.xcassets */,
+				62896C4C19F31E6C00224684 /* LaunchScreen.xib */,
 			);
 			path = Triviarama;
 			sourceTree = "<group>";
@@ -295,6 +316,24 @@
 				62896C5819F31E6C00224684 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		96E86C5819FB3D8A00BA059B /* Clases */ = {
+			isa = PBXGroup;
+			children = (
+				96E86C5019FB3CDB00BA059B /* Scores.h */,
+				96E86C5119FB3CDB00BA059B /* Scores.m */,
+			);
+			name = Clases;
+			sourceTree = "<group>";
+		};
+		96E86C5C19FB4B9800BA059B /* DataBaseManagement */ = {
+			isa = PBXGroup;
+			children = (
+				96E86C5919FB4B8D00BA059B /* DataBaseManagement.h */,
+				96E86C5A19FB4B8D00BA059B /* DataBaseManagement.m */,
+			);
+			name = DataBaseManagement;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -444,9 +483,12 @@
 			files = (
 				62896C4619F31E6C00224684 /* TriviaramaViewController.m in Sources */,
 				6250D36319F8898D00AE9524 /* ScoresViewController.m in Sources */,
+				96E86C5219FB3CDB00BA059B /* Scores.m in Sources */,
 				6250D36919F889D500AE9524 /* GameViewController.m in Sources */,
 				62896C4319F31E6C00224684 /* AppDelegate.m in Sources */,
+				96E86C4F19FB3A3700BA059B /* Scores.xcdatamodeld in Sources */,
 				62896C4019F31E6C00224684 /* main.m in Sources */,
+				96E86C5B19FB4B8D00BA059B /* DataBaseManagement.m in Sources */,
 				6250D36619F889B200AE9524 /* FARMViewController.m in Sources */,
 				62570D1E19F954990038B2C2 /* CustomNavigationController.m in Sources */,
 				6250D36019F8895D00AE9524 /* MenuViewController.m in Sources */,
@@ -658,6 +700,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		96E86C4D19FB3A3700BA059B /* Scores.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				96E86C4E19FB3A3700BA059B /* Scores.xcdatamodel */,
+			);
+			currentVersion = 96E86C4E19FB3A3700BA059B /* Scores.xcdatamodel */;
+			path = Scores.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 62896C3219F31E6C00224684 /* Project object */;
 }
