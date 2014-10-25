@@ -36,8 +36,14 @@
  */
 
 #import "ScoresViewController.h"
+#import "DataBaseManagement.h"
+#import "Scores.h"
 
-@interface ScoresViewController ()
+
+@interface ScoresViewController (){
+    NSMutableArray *scoreList;
+    NSMutableArray *scores;
+}
 
 @end
 
@@ -50,22 +56,59 @@
     self.scoresTableView.backgroundColor = [UIColor clearColor];
     self.scoresTableView.opaque= NO;
     self.scoresTableView.backgroundView= nil;
+    
+    if(!scoreList){
+        scoreList = [[NSMutableArray alloc] init];
+    }
+    
+    DataBaseManagement *serv = [DataBaseManagement instance];
+    [serv loadScore];
+    
+    scores = [serv scoreList];
+    
+    //Sort
+    [self sortScores];
+    
+}
+
+-(void) sortScores{
+    Scores *temp, *swap;
+    int minimum=0;
+    for (int i=0; i<[scores count]-1; i++) {
+        temp=scores[i];
+        for (int j=i+1; i<[scores count]; j++) {
+            if (temp.score>[scores[j] score]) {
+                temp=scores[j];
+                minimum=j;
+            }
+        }
+        swap=scores[i];
+        scores[i]=temp;
+        scores[minimum]=swap;
+    }
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+}
+/*
+-(void) loadScoresPlist{
+    NSBundle *miBundle = [NSBundle mainBundle];
+    NSString *path = [miBundle pathForResource:@"Scores" ofType:@"plist"];
+    NSMutableArray *scores = [NSMutableArray arrayWithContentsOfFile:path];
+    
+    for (int i=0; i< [scores count]; i++){
+        [self insertar:scores[i]]; //Usando protocolo
+    }
+    
 }
 
-
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void) insertar:(id)datos {
+    if (!scores) {
+        scores = [[NSMutableArray alloc] init];
+    }
+    [scores insertObject:datos atIndex:0];
+    [self.tableView reloadData];
 }
 */
 

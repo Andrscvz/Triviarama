@@ -36,6 +36,7 @@
  */
 
 #import <UIKit/UIKit.h>
+#include "AppDelegate.h"
 
 @interface ScoresViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UITableView *scoresTableView;

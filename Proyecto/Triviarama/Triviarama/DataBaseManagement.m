@@ -125,6 +125,14 @@
 	[self saveContext];
 }
 
+- (void) loadScoresPlist {
+    NSBundle *miBundle = [NSBundle mainBundle];
+    NSString *path = [miBundle pathForResource:@"Scores" ofType:@"plist"];
+    NSMutableArray *scores = [NSMutableArray arrayWithContentsOfFile:path];
+    for(id m in scores) {
+        [self insertScore:m];
+    }
+}
 
 -(NSMutableArray*)loadScore
 {
@@ -139,7 +147,7 @@
 	
 	if(results.count==0){
 		NSLog(@"There are no scores saved...");
-        //[self cargaMascotasPlist];
+        [self loadScoresPlist];
         return NULL;
 	}else{
         if (_scoreList) {
