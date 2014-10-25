@@ -146,8 +146,8 @@
     Scores *temp;
 	
 	if(results.count==0){
-		NSLog(@"There are no scores saved...");
-        [self loadScoresPlist];
+		/*NSLog(@"There are no scores saved...");
+        [self loadScoresPlist];*/
         return NULL;
 	}else{
         if (_scoreList) {

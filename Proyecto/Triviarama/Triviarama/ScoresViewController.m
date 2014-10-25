@@ -67,17 +67,18 @@
     scores = [serv scoreList];
     
     //Sort
+    if (scores==NULL) {
     [self sortScores];
-    
+    }
 }
 
 -(void) sortScores{
     Scores *temp, *swap;
     int minimum=0;
-    for (int i=0; i<[scores count]-1; i++) {
+    for (int i=0; i<[scores count]; i++) {
         temp=scores[i];
-        for (int j=i+1; i<[scores count]; j++) {
-            if (temp.score>[scores[j] score]) {
+        for (int j=i; i<[scores count]; j++) {
+            if ([temp valueForKey:@"score"]>[scores[j] valueForKey:@"score"]) {
                 temp=scores[j];
                 minimum=j;
             }
