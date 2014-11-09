@@ -44,6 +44,48 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    _imageView.animationImages = [NSArray arrayWithObjects:
+                                 [UIImage imageNamed:@"LaunchImage0000.png"],
+                                 [UIImage imageNamed:@"LaunchImage0001.png"],
+                                 [UIImage imageNamed:@"LaunchImage0002.png"],
+                                 [UIImage imageNamed:@"LaunchImage0003.png"],
+                                 [UIImage imageNamed:@"LaunchImage0004.png"],
+                                 [UIImage imageNamed:@"LaunchImage0005.png"],
+                                 [UIImage imageNamed:@"LaunchImage0006.png"],
+                                 [UIImage imageNamed:@"LaunchImage0007.png"],
+                                 [UIImage imageNamed:@"LaunchImage0008.png"],
+                                 [UIImage imageNamed:@"LaunchImage0009.png"],
+                                 [UIImage imageNamed:@"LaunchImage0010.png"],
+                                 [UIImage imageNamed:@"LaunchImage0011.png"],
+                                 [UIImage imageNamed:@"LaunchImage0012.png"],
+                                 [UIImage imageNamed:@"LaunchImage0013.png"],
+                                 [UIImage imageNamed:@"LaunchImage0014.png"],
+                                 [UIImage imageNamed:@"LaunchImage0015.png"],
+                                 [UIImage imageNamed:@"LaunchImage0016.png"],
+                                 [UIImage imageNamed:@"LaunchImage0017.png"],
+                                 [UIImage imageNamed:@"LaunchImage0018.png"],
+                                 [UIImage imageNamed:@"LaunchImage0019.png"],
+                                 [UIImage imageNamed:@"LaunchImage0020.png"],
+                                 [UIImage imageNamed:@"LaunchImage0021.png"],
+                                 [UIImage imageNamed:@"LaunchImage0022.png"],
+                                 [UIImage imageNamed:@"LaunchImage0023.png"],
+                                 [UIImage imageNamed:@"LaunchImage0024.png"],
+                                 [UIImage imageNamed:@"LaunchImage0025.png"],
+                                 [UIImage imageNamed:@"LaunchImage0026.png"],
+                                 [UIImage imageNamed:@"LaunchImage0027.png"],
+                                 [UIImage imageNamed:@"LaunchImage0028.png"],
+                                 [UIImage imageNamed:@"LaunchImage0029.png"],
+                                 [UIImage imageNamed:@"LaunchImage0030.png"],
+                                 [UIImage imageNamed:@"LaunchImage0031.png"],
+                                 [UIImage imageNamed:@"LaunchImage0032.png"],
+                                 [UIImage imageNamed:@"LaunchImage0033.png"], nil];
+    
+    
+    _imageView.animationDuration = 3.0;
+    _imageView.animationRepeatCount = 1;
+    [_imageView startAnimating];
+    
     self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"ipadBackgroundPantallaInicio.jpg"]];
     // Do any additional setup after loading the view, typically from a nib.
 }
@@ -53,5 +95,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction)unwind1:(UIStoryboardSegue *)segue{
+    
+}
 
 @end

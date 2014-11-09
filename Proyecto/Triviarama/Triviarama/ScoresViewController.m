@@ -36,9 +36,9 @@
  */
 
 #import "ScoresViewController.h"
+#import "ScoreTableViewCell.h"
 #import "DataBaseManagement.h"
 #import "Scores.h"
-
 
 @interface ScoresViewController (){
     NSMutableArray *scoreList;
@@ -51,6 +51,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.scoresTableView.dataSource = self;
+    self.scoresTableView.delegate = self;
     self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"ipadBackground.jpg"]];
     // Do any additional setup after loading the view.
     self.scoresTableView.backgroundColor = [UIColor clearColor];
@@ -68,8 +70,10 @@
     
     //Sort
     if (scores==NULL) {
-    [self sortScores];
+        [self sortScores];
     }
+
+    
 }
 
 -(void) sortScores{
@@ -91,25 +95,40 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
-/*
--(void) loadScoresPlist{
-    NSBundle *miBundle = [NSBundle mainBundle];
-    NSString *path = [miBundle pathForResource:@"Scores" ofType:@"plist"];
-    NSMutableArray *scores = [NSMutableArray arrayWithContentsOfFile:path];
-    
-    for (int i=0; i< [scores count]; i++){
-        [self insertar:scores[i]]; //Usando protocolo
-    }
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 1;
     
 }
 
-- (void) insertar:(id)datos {
-    if (!scores) {
-        scores = [[NSMutableArray alloc] init];
-    }
-    [scores insertObject:datos atIndex:0];
-    [self.tableView reloadData];
+- (NSInteger)tableView:(UITableView *)tableView
+ numberOfRowsInSection:(NSInteger)section{
+    return 1;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    ScoreTableViewCell *cell;
+    cell= [tableView dequeueReusableCellWithIdentifier:@"score" forIndexPath:indexPath];
+    cell.placeLabel.text =@"1.";
+    cell.nameLabel.text=@"Roberto Rivera";
+    cell.pointsLabel.text=@"";
+    cell.backgroundColor=[UIColor clearColor];
+    cell.opaque= NO;
+    cell.backgroundView=nil;
+    return cell;
+}
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
 }
 */
 

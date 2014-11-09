@@ -45,13 +45,20 @@
 @implementation AppDelegate
 
 
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
     DataBaseManagement *servicios = [DataBaseManagement instance];
     [servicios loadScore];
-    
     // Override point for customization after application launch.
-    return YES;
+    
+        NSString *music = [[NSBundle mainBundle]pathForResource:@"music" ofType:@"wav"];
+        audioPlayer1 = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:music] error:NULL];
+        audioPlayer1.delegate=self;
+        audioPlayer1.numberOfLoops = -1;
+        [audioPlayer1 play];
+        
+        // Override point for customization after application launch.
+        return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -75,7 +82,6 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
-
 - (void)saveContext
 {
     NSError *error = nil;
@@ -94,5 +100,4 @@
 {
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
-
 @end

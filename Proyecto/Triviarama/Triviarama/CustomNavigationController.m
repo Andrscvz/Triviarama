@@ -55,7 +55,7 @@
 
 - (BOOL)shouldAutorotate;
 {
-    if([self.topViewController.title isEqualToString:@"game"]){
+    if([self.topViewController.title isEqualToString:@"game"] || [self.topViewController.title isEqualToString:@"result"]){
         if ([[UIApplication sharedApplication] statusBarOrientation]== UIInterfaceOrientationLandscapeLeft || [[UIApplication sharedApplication] statusBarOrientation]== UIInterfaceOrientationLandscapeRight) {
             return YES;
         }
@@ -66,7 +66,7 @@
 
 -(NSUInteger)supportedInterfaceOrientations
 {
-    if([self.topViewController.title isEqualToString:@"game"]){
+    if([self.topViewController.title isEqualToString:@"game"] || [self.topViewController.title isEqualToString:@"result"]){
         return UIInterfaceOrientationMaskPortrait;
     }
     return UIInterfaceOrientationMaskAll;
@@ -75,7 +75,7 @@
 
 -(UIInterfaceOrientation) preferredInterfaceOrientationForPresentation
 {
-    if([self.topViewController.title isEqualToString:@"game"]){
+    if([self.topViewController.title isEqualToString:@"game"] || [self.topViewController.title isEqualToString:@"result"]){
         return UIInterfaceOrientationPortrait;
     }
     return UIInterfaceOrientationLandscapeLeft | UIInterfaceOrientationLandscapeRight | UIInterfaceOrientationPortrait;

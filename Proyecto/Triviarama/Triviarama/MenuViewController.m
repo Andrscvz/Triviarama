@@ -36,6 +36,7 @@
  */
 
 #import "MenuViewController.h"
+#import "GameViewController.h"
 
 @interface MenuViewController (){
     NSArray * levels, * categories;
@@ -49,7 +50,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"ipadBackground.jpg"]];
     levels=[[NSArray alloc] initWithObjects:@"Easy", @"Medium", @"Hard", nil];
-    categories=[[NSArray alloc] initWithObjects:@"Animals", @"Books & Authors", @"Fashion", @"Food",@"History",@"Quotes", @"Science",@"Sports",@"Travel & Tourism", @"The Movies", @"Word Origins", nil];
+    categories=[[NSArray alloc] initWithObjects:@"Animals", @"Books & Authors", @"Fashion", @"Food",@"History",@"Quotes", @"Science",@"Sports",@"Travel & Tourism", @"Movies", @"Word Origins", nil];
     self.levelsTableView.delegate = self;
     self.levelsTableView.dataSource = self;
     self.CategoriesTableView.dataSource = self;
@@ -105,10 +106,10 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if(self.levelsTableView ==tableView){
-        self.labelNivel.text= [levels objectAtIndex:indexPath.row];
+        self.labelLevel.text= [levels objectAtIndex:indexPath.row];
     }
     else{
-        self.labelCategoria.text= [categories objectAtIndex:indexPath.row];
+        self.labelCategory.text= [categories objectAtIndex:indexPath.row];
     }
     
 }
@@ -123,5 +124,53 @@
         return [levels count];}
     return [categories count];
 }
+
+/*- (IBAction)unWind:(UIStoryboardSegue*)segue{
+ 
+}*/
+- (NSString *)getIdOfCategory:(NSString *)categoryName {
+    if ([categoryName isEqualToString:@"Animals"]) {
+        return @"21";
+    } else if ([categoryName isEqualToString:@"Books & Authors"]) {
+        return @"197";
+    } else if ([categoryName isEqualToString:@"Fashion"]) {
+        return @"26";
+    } else if ([categoryName isEqualToString:@"Food"]) {
+        return @"49";
+    } else if ([categoryName isEqualToString:@"History"]) {
+        return @"114";
+    } else if ([categoryName isEqualToString:@"Quotes"]) {
+        return @"1420";
+    } else if ([categoryName isEqualToString:@"Science"]) {
+        return @"25";
+    } else if ([categoryName isEqualToString:@"Sports"]) {
+        return @"42";
+    } else if ([categoryName isEqualToString:@"Travel & Tourism"]) {
+        return @"369";
+    } else if ([categoryName isEqualToString:@"Movies"]) {
+        return @"309";
+    } else if ([categoryName isEqualToString:@"Word Origins"]) {
+        return @"223";
+    } else {
+        return @"-1";
+    }
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([[segue identifier] isEqualToString:@"segueToGame"])
+    {
+        NSDictionary *dataOfMenuSelected = [[NSDictionary alloc] initWithObjectsAndKeys:self.labelLevel.text, @"level", self.labelCategory.text, @"category", [self getIdOfCategory:self.labelCategory.text], @"idCategory", nil];
+        
+        [[segue destinationViewController] setDataOfMenu:dataOfMenuSelected];
+    } else {
+        [segue destinationViewController];
+    }
+}
+
+-(IBAction)unwind2:(UIStoryboardSegue *)segue{
+    
+}
+
 
 @end

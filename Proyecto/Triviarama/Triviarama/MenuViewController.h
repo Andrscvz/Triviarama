@@ -41,7 +41,8 @@
 @property (strong, nonatomic) IBOutlet UITableView *levelsTableView;
 @property (strong, nonatomic) IBOutlet UITableView *CategoriesTableView;
 
-@property (strong, nonatomic) IBOutlet UILabel *labelNivel;
-@property (strong, nonatomic) IBOutlet UILabel *labelCategoria;
+@property (strong, nonatomic) IBOutlet UILabel *labelLevel;
+
+@property (strong, nonatomic) IBOutlet UILabel *labelCategory;
 
 @end

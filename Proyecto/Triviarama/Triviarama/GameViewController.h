@@ -36,7 +36,68 @@
  */
 
 #import <UIKit/UIKit.h>
+#import "Card.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface GameViewController : UIViewController
+
+@property (strong, nonatomic) AVAudioPlayer *audioPlayer;
+
+@property (strong, nonatomic) IBOutlet UIView *cardView1;
+@property (strong, nonatomic) IBOutlet UIView *cardView2;
+@property (strong, nonatomic) IBOutlet UIView *cardView3;
+@property (strong, nonatomic) IBOutlet UIView *cardView4;
+@property (strong, nonatomic) IBOutlet UIView *cardView5;
+@property (strong, nonatomic) IBOutlet UIView *cardView6;
+@property (strong, nonatomic) IBOutlet UIView *cardView7;
+@property (strong, nonatomic) IBOutlet UIView *cardView8;
+@property (strong, nonatomic) IBOutlet UIView *cardView9;
+@property (strong, nonatomic) IBOutlet UIView *cardView10;
+@property (strong, nonatomic) IBOutlet UIView *cardView11;
+@property (strong, nonatomic) IBOutlet UIView *cardView12;
+@property (strong, nonatomic) IBOutlet UIView *cardView13;
+@property (strong, nonatomic) IBOutlet UIView *cardView14;
+@property (strong, nonatomic) IBOutlet UIView *cardView15;
+@property (strong, nonatomic) IBOutlet UIView *cardView16;
+@property (strong, nonatomic) IBOutlet UIView *cardView17;
+@property (strong, nonatomic) IBOutlet UIView *cardView18;
+@property (strong, nonatomic) IBOutlet UIView *cardView19;
+@property (strong, nonatomic) IBOutlet UIView *cardView20;
+- (IBAction)tapCard1:(id)sender;
+- (IBAction)tapCard2:(id)sender;
+- (IBAction)tapCard3:(id)sender;
+- (IBAction)tapCard4:(id)sender;
+- (IBAction)tapCard5:(id)sender;
+- (IBAction)tapCard6:(id)sender;
+- (IBAction)tapCard7:(id)sender;
+- (IBAction)tapCard8:(id)sender;
+- (IBAction)tapCard9:(id)sender;
+- (IBAction)tapCard10:(id)sender;
+- (IBAction)tapCard11:(id)sender;
+- (IBAction)tapCard12:(id)sender;
+- (IBAction)tapCard13:(id)sender;
+- (IBAction)tapCard14:(id)sender;
+- (IBAction)tapCard15:(id)sender;
+- (IBAction)tapCard16:(id)sender;
+- (IBAction)tapCard17:(id)sender;
+- (IBAction)tapCard18:(id)sender;
+- (IBAction)tapCard19:(id)sender;
+- (IBAction)tapCard20:(id)sender;
+@property (strong, nonatomic) IBOutlet UILabel *timerLabel;
+@property (strong, nonatomic) IBOutlet UILabel *pointsLabel;
+@property (strong, nonatomic) IBOutlet UILabel *wrongMovesLabel;
+
+@property (strong, nonatomic) id dataOfMenu;
+@property (strong, nonatomic) IBOutlet UIImageView *categoryImageView;
+
+@property (strong, nonatomic) IBOutlet UIButton *resultButton;
+
+//Properties used to get json object from web service
+@property (strong,nonatomic) NSURLConnection *connection;
+@property (strong,nonatomic) NSMutableData *responseData;
+@property (strong,nonatomic) UIActivityIndicatorView *loading;
+
+//Property of the card
+@property Card *myCard;
 
 @end

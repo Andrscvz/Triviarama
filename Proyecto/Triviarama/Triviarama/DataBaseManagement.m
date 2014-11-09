@@ -25,8 +25,8 @@
     NSManagedObjectContext *managedObjectContext = self.managedObjectContext;
     if (managedObjectContext != nil) {
         if ([managedObjectContext hasChanges] && ![managedObjectContext save:&error]) {
-			// Replace this implementation with code to handle the error appropriately.
-			// abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+            // Replace this implementation with code to handle the error appropriately.
+            // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
             NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
             abort();
         }
@@ -91,38 +91,38 @@
 
 - (id)init
 {
-	if(self = [super init]){
-		[self setScoreList:[[NSMutableArray alloc] init]];
-	}
-	
-	return self;
+    if(self = [super init]){
+        [self setScoreList:[[NSMutableArray alloc] init]];
+    }
+    
+    return self;
 }
 
 + (DataBaseManagement  *)instance
 {
-	static DataBaseManagement *_instancia = nil;
-	static dispatch_once_t safer;
-	
-	dispatch_once(&safer, ^(void){
-		_instancia = [[DataBaseManagement alloc] init];
-	});
-	
-	return _instancia;
+    static DataBaseManagement *_instancia = nil;
+    static dispatch_once_t safer;
+    
+    dispatch_once(&safer, ^(void){
+        _instancia = [[DataBaseManagement alloc] init];
+    });
+    
+    return _instancia;
 }
 
 -(void)insertScore:(id)score
 {
-	NSManagedObjectContext *context = self.managedObjectContext;
-	Scores *nueva = [NSEntityDescription insertNewObjectForEntityForName:@"Scores" inManagedObjectContext:context];
-	NSDictionary *scores = (NSDictionary *)score;
-	nueva.id = [scores objectForKey: @"id"];
+    NSManagedObjectContext *context = self.managedObjectContext;
+    Scores *nueva = [NSEntityDescription insertNewObjectForEntityForName:@"Scores" inManagedObjectContext:context];
+    NSDictionary *scores = (NSDictionary *)score;
+    nueva.id = [scores objectForKey: @"id"];
     nueva.nombre = [scores objectForKey:@"nombre"];
-	nueva.points = [scores objectForKey:@"points"];
-	nueva.score = [scores objectForKey:@"score"];
+    nueva.points = [scores objectForKey:@"points"];
+    nueva.score = [scores objectForKey:@"score"];
     nueva.time = [scores objectForKey:@"time"];
     nueva.wrongMoves = [scores objectForKey:@"wrongMoves"];
     
-	[self saveContext];
+    [self saveContext];
 }
 
 - (void) loadScoresPlist {
@@ -139,23 +139,23 @@
     NSManagedObjectContext *context = self.managedObjectContext;
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"Scores" inManagedObjectContext:context];
-	[request setEntity:entity];
-	
-	NSError *error;
-	NSMutableArray *results = (NSMutableArray*)[context executeFetchRequest:request error:&error];
+    [request setEntity:entity];
+    
+    NSError *error;
+    NSMutableArray *results = (NSMutableArray*)[context executeFetchRequest:request error:&error];
     Scores *temp;
-	
-	if(results.count==0){
-		/*NSLog(@"There are no scores saved...");
-        [self loadScoresPlist];*/
+    
+    if(results.count==0){
+        /*NSLog(@"There are no scores saved...");
+         [self loadScoresPlist];*/
         return NULL;
-	}else{
+    }else{
         if (_scoreList) {
             _scoreList = [[NSMutableArray alloc] init];
         }
         for (int i = 0; i < results.count; i++) {
             temp = results[i];
-
+            
             NSMutableDictionary *miDicc = [[NSMutableDictionary alloc]initWithObjectsAndKeys:
                                            [temp valueForKey:@"id"], @"id",
                                            [temp valueForKey:@"nombre"], @"nombre",
@@ -165,12 +165,12 @@
                                            [temp valueForKey:@"wrongMoves"], @"wrongMoves" ,nil];
             
             [self.scoreList addObject:miDicc];
-        
+            
         }
         
         return self.scoreList;
-	}
-
+    }
+    
 }
 
 @end

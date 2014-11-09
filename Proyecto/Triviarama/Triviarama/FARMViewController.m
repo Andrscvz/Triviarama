@@ -47,6 +47,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"ipadBackground.jpg"]];
     self.FarmWebVIew.delegate = self;
+    
     [self loadSite];
     // Do any additional setup after loading the view.
 }
@@ -55,6 +56,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 
 
