@@ -27,6 +27,6 @@ Authors:
   	 Andrés Gerardo Cavazos Hernández – A01195067
      Roberto Carlos Rivera Martínez – A00618181
      Fernando Javier Garza Brambila – A01034753
-     Marialicia Villarreal García – A00811095
+     Marialicia V
 	
 Proyecto de desarrollo movil
